@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Shouvik Majumder} \\ \vspace{1pt}
+    \small 267-455-2326 $|$ \href{shouvikprism@gmail.com}{\underline{shouvikprism@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/shouvikmajumder/}{\underline{linkedin.com/in/shouvikmajumder}} $|$  \href{https://github.com/shouvikmajumder}{\underline{github.com/shouvikmajumder}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{The Pennsylvania State University }
+}{Aug 2022 -- May 2026}
+      {Bachelor of Science in Computer Science}{GPA: 3.40/4.0}
+
+      \resumeItem{\textbf{Relevant Coursework: }Programming and Computation I - II, Object Oriented Programming, Intro to Systems Programming, Computer Engineering and Digital Design: Theory and Practice, Calculus I - III, Linear Algebra, Discrete Mathematics, Data Structures and Algorithms, Computer Organization And Design}
+  \resumeSubHeadingListEnd
+
+
+  %-----------Technical-----------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+      \resumeItem{\textbf{Programming}{: Python, Java, JavaScript, C, R, HTML, CSS, Node.js, Express.js, React.js, Verilog} \\
+     \textbf{Tools}{: Visual Studio Code, Netbeans, QT Designer, Jupyter Notebooks, Git, Linux/Unix, Unity, Vivado}}
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Teaching Assistant}{Aug 2024 -- Present}
+      {The Pennsylvania State University}{University Park, PA}
+      \resumeItemListStart
+        \resumeItem{
+Graded assignments, quizzes, and exams for a \textbf{Linear Algebra (MATH 220)} course with \textbf{100+ students}
+}
+ \resumeItem{
+Providing detailed feedback on \textbf{600+} student submissions, enhancing clarity and understanding of  course material
+}
+      \resumeItemListEnd
+      \resumeSubheading
+      {Research Assistant}{May 2024 -- Present}
+      {The Pennsylvania State University}{University Park, PA}
+      \resumeItemListStart
+        \resumeItem{
+Conducting literature searches on \textbf{1000+} articles using 3 scholarly databases (\textbf{PubMed, Web of Science, and SSRN}) to retrieve and archive articles related to biotechnology, aiding in the research team’s analysis
+
+}
+        \resumeItem{
+Enhancing data reliability by verifying \textbf{170+ }findings through cross-referencing multiple sources, ensuring the reliability of the collected data for ongoing research 
+
+}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2024 -- Aug 2024}
+      {The Pennsylvania State University}{University Park, PA}
+      \resumeItemListStart
+        \resumeItem{
+Developed a \textbf{Python} application using \textbf{QT Designer},\textbf{ obspy}, and \textbf{daspy} data structures to process and visualize data from \textbf{2,000+ fiber optic sensor channels}, aiding geophysicists in analyzing seismic events 
+
+}
+ \resumeItem{
+Implemented a frequency analysis feature that generates 3 critical graphs, displaying raw data, dominating and average\textbf{ }frequencies across all channels, enhancing data interpretation process for geophysicists
+}
+\resumeItem{
+Integrated a Bandpass filter option within the interface to isolate and analyze specific signals, resulting in a\textbf{ 25\%} increase in the precision of geohazard readings
+}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Statistical Programming Intern}{June 2024 -- Aug 2024}
+      {The Pennsylvania State University}{University Park, PA}
+      \resumeItemListStart
+        \resumeItem{
+Utilized \textbf{R} to import, clean, and analyze survey data from \textbf{200+ physicians} and \textbf{50+ medical students} on the \textbf{AI in Clinical Workflow} project to assess AI’s impact on the medical field. 
+}
+
+        \resumeItem{
+Generated\textbf{ 40+ }statistical reports from the cleaned data, contributing to the project's comprehensive analysis of AIs' influence on clinical practices 
+
+}
+ \resumeItem{
+Increased data processing efficiency by \textbf{30\%} through automating data cleaning tasks using \textbf{R, dplyr,} and \textbf{tidyr}
+}
+      \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Movie Recommendation System} $|$ \emph{Python, Scikit-learn, Pandas, JupyterLab}}{}
+          \resumeItemListStart
+            \resumeItem{
+Developed a movie recommendation system in JupyterLab using Python (Pandas, Scikit-learn) to manage an IMDB dataset of \textbf{500+ }movies, utilizing TF-IDF vectorization for natural language processing}
+
+          \resumeItemListEnd
+
+          \resumeProjectHeading
+          {\textbf{
+\textbf{AI Image Generation App }
+} $|$ \emph{MongoDB, Express.js, React.js, Node.js}}{}
+          \resumeItemListStart
+            \resumeItem{
+Developed a full-stack AI Image Generation App using the MERN stack (MongoDB, Express.js, React.js, Node.js) with \textbf{20+} modular React components, integrating OpenAIs DALL-E model to generate high-quality images based on dynamic user input
+}
+
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+
+%-----------PROGRAMMING SKILLS-----------
+
+%-------------------------------------------
+\end{document}
