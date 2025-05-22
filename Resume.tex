@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Author : Shouvik Majumder
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
@@ -20,21 +20,8 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -57,29 +44,23 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \small#3 & \small#4 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \small#1 & \small#2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -99,154 +80,95 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+% Resume starts here
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
+% Header
 \begin{center}
-    \textbf{\Huge \scshape Shouvik Majumder} \\ \vspace{1pt}
-    \small 267-455-2326 $|$ \href{shouvikprism@gmail.com}{\underline{shouvikprism@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/shouvikmajumder/}{\underline{linkedin.com/in/shouvikmajumder}} $|$  \href{https://github.com/shouvikmajumder}{\underline{github.com/shouvikmajumder}}
+    \textbf{\Huge \scshape Shouvik Majumder} \\
+    \small 
+    \href{mailto:shouvikprism@gmail.com}{\underline{shouvikprism@gmail.com}} $|$ 267-455-2326 $|$
+    \href{https://www.linkedin.com/in/shouvikmajumder/}{\underline{linkedin.com/in/shouvikmajumder}} $|$
+    \href{https://github.com/shouvikmajumder}{\underline{github.com/shouvikmajumder}}
 \end{center}
 
-
-%-----------EDUCATION-----------
+% Education
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {\textbf{The Pennsylvania State University }
-}{Aug 2022 -- May 2026}
-      {Bachelor of Science in Computer Science}{University Park, PA}
-
-      \resumeItem{\textbf{Relevant Coursework: }Programming and Computation I - II, Object Oriented Programming, Intro to Systems Programming, Computer Engineering and Digital Design: Theory and Practice, Calculus I - III, Linear Algebra, Discrete Mathematics, Data Structures and Algorithms, Computer Organization And Design}
-  \resumeSubHeadingListEnd
-
-
-  %-----------Technical-----------
-\section{Technical Skills}
-  \resumeSubHeadingListStart
-      \resumeItem{\textbf{Programming}{: Python, Java, JavaScript, C, R, HTML, CSS, Node.js, Express.js, React.js, Verilog} \\
-     \textbf{Tools}{: Visual Studio Code, Netbeans, QT Designer, Jupyter Notebooks, Git, Linux/Unix, Unity, Vivado}}
-  \resumeSubHeadingListEnd
-  
-%-----------EXPERIENCE-----------
-\section{Work Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
   \resumeSubheading
-      {Software Engineer Intern}{June 2025 -- Aug 2025}
-      {Lockheed Martin}{King of Prussia, PA}
-      \resumeItemListStart
-        \resumeItem{Incoming Software Engineer Intern at \textbf{Lockheed Martin} in the \textbf{Rotary and Mission Systems} division
-}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Teaching Assistant}{Aug 2024 -- Present}
-      {The Pennsylvania State University}{University Park, PA}
-      \resumeItemListStart
-        \resumeItem{
-Grading assignments, quizzes, and exams for a \textbf{Linear Algebra (MATH 220)} course with \textbf{100+ students}
-}
- \resumeItem{
-Providing feedback on \textbf{600+} weekly student submissions, enhancing clarity and understanding of  course material
-}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-    
-    \resumeSubheading
-      {Software Engineer Intern}{May 2024 -- Aug 2024}
-      {The Pennsylvania State University}{University Park, PA}
-      \resumeItemListStart
-        \resumeItem{
-Developed a \textbf{Python} application using \textbf{QT Designer},\textbf{ obspy}, and \textbf{daspy} data structures to process and visualize data from \textbf{2,000+ fiber optic sensor channels}, aiding geophysicists in analyzing seismic events 
+    {The Pennsylvania State University}{Aug 2022 -- May 2026}
+    {Bachelor of Science in Computer Science}{University Park, PA}
+    \resumeItem{\textbf{Relevant Coursework:} Data Structures and Algorithms, Operating Systems, Object-Oriented Programming}
+\resumeSubHeadingListEnd
 
-}
- \resumeItem{
-Implemented a frequency analysis feature that generates 3 critical graphs, displaying raw data, dominating and average\textbf{ }frequencies across all channels, enhancing data interpretation process for geophysicists
-}
-\resumeItem{
-Integrated a Bandpass filter option within the interface to isolate and analyze specific signals, resulting in a\textbf{ 25\%} increase in the precision of geohazard readings
-}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Statistical Programming Intern}{June 2024 -- Aug 2024}
-      {The Pennsylvania State University}{University Park, PA}
-      \resumeItemListStart
-        \resumeItem{
-Utilized \textbf{R} to import, clean, and analyze survey data from \textbf{200+ physicians} and \textbf{50+ medical students} on the \textbf{AI in Clinical Workflow} project to assess the impact of AI on the medical field
-}
+% Skills
+\section{Skills and Certifications}
+\resumeSubHeadingListStart
+  \resumeItem{
+    \textbf{Security Clearance:} Secret \\
+    \textbf{Programming:} Python, Java, JavaScript, C, R, HTML, CSS, Node.js, Express.js, React.js, Verilog \\
+    \textbf{Tools:} Visual Studio Code, Netbeans, QT Designer, Jupyter Notebooks, Git, Linux/Unix, Unity, Vivado
+  }
+\resumeSubHeadingListEnd
 
-        \resumeItem{
-Generated\textbf{ 40+ }statistical reports from the cleaned data, contributing to the project's comprehensive analysis of AIs' influence on clinical practices 
+% Experience
+\section{Work Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Software Engineer Intern}{June 2025 -- Aug 2025}
+    {Lockheed Martin}{King of Prussia, PA}
+    \resumeItemListStart
+      \resumeItem{Incoming Software Engineer Intern at Lockheed Martin in the Rotary and Mission Systems division}
+    \resumeItemListEnd
 
-}
- \resumeItem{
-Increased data processing efficiency by \textbf{30\%} through automating data cleaning tasks using \textbf{R, dplyr,} and \textbf{tidyr}
-}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Teaching Assistant}{Aug 2024 -- Present}
+    {The Pennsylvania State University}{University Park, PA}
+    \resumeItemListStart
+      \resumeItem{Grading assignments for Linear Algebra (MATH 220) and Plane Trigonometry (MATH 26) courses with 100+ students}
+      \resumeItem{Providing feedback on 600+ weekly student submissions, enhancing clarity and understanding of course material}
+    \resumeItemListEnd
 
+  \resumeSubheading
+    {Software Engineer Intern}{May 2024 -- Aug 2024}
+    {The Pennsylvania State University}{University Park, PA}
+    \resumeItemListStart
+      \resumeItem{Built a Python-based GUI with QT Designer to visualize and analyze seismic data from 2,000+ fiber optic sensor channels}
+\resumeItem{Implemented a frequency analysis feature to generate raw, dominant, and average frequency graphs, streamlining seismic event interpretation}
+\resumeItem{Enhanced signal precision by 25\% through integration of a Bandpass filter for isolating relevant frequency ranges}
+    \resumeItemListEnd
 
+  \resumeSubheading
+    {Statistical Programming Intern}{June 2024 -- Aug 2024}
+    {The Pennsylvania State University}{University Park, PA}
+    \resumeItemListStart
+      \resumeItem{Utilized R to import, clean, and analyze survey data from 200+ physicians and 50+ medical students on the AI in Clinical Workflow project}
+      \resumeItem{Generated 40+ statistical reports from the cleaned data, contributing to the project's comprehensive analysis}
+      \resumeItem{Increased data processing efficiency by 30\% through automating data cleaning tasks using R, dplyr, and tidyr}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
+% Projects
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Movie Recommendation System} $|$ \emph{Python, Scikit-learn, Pandas, JupyterLab}}{}
-          \resumeItemListStart
-            \resumeItem{
-Developed a movie recommendation system in JupyterLab using Python (Pandas, Scikit-learn) to manage an IMDB dataset of \textbf{500+ }movies, utilizing TF-IDF vectorization for natural language processing}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Movie Recommendation System} $|$ Python, Scikit-learn, Pandas, JupyterLab}{}
+    \resumeItemListStart
+      \resumeItem{Developed a movie recommendation system using TF-IDF vectorization for NLP on an IMDB dataset of 500+ films}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
-          \resumeItemListEnd
-
-          \resumeProjectHeading
-          {\textbf{
-\textbf{AI Image Generation App }
-} $|$ \emph{MongoDB, Express.js, React.js, Node.js}}{}
-          \resumeItemListStart
-            \resumeItem{
-Developed a full-stack AI Image Generation App using the MERN stack (MongoDB, Express.js, React.js, Node.js) with \textbf{20+} modular React components, integrating OpenAIs DALL-E model to generate high-quality images based on dynamic user input
-}
-
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-    
-
-%-----------PROGRAMMING SKILLS-----------
-
-%-----------EXPERIENCE-----------
+% Extracurricular
 \section{Extracurricular Activities}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Research Assistant}{May 2024 -- Present}
-      {The Pennsylvania State University}{University Park, PA}
-      \resumeItemListStart
-        \resumeItem{
-Conducting literature searches on \textbf{1000+} articles using 3 scholarly databases (\textbf{PubMed, Web of Science, and SSRN}) to retrieve and archive articles related to biotechnology, aiding in the research team’s analysis
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Research Assistant}{May 2024 -- May 2025}
+    {The Pennsylvania State University}{University Park, PA}
+    \resumeItemListStart
+      \resumeItem{Conducted literature searches on 100+ articles using PubMed to support biotechnology research on ELSI}
+      \resumeItem{Enhanced data reliability by verifying 170+ findings through cross-referencing multiple sources}
+      \resumeItem{Drafted a manuscript examining the impacts of intellectual property on 3D bioprinting, addressing legal, ethical, and translational challenges}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
-}
-        \resumeItem{
-Enhancing data reliability by verifying \textbf{170+ }findings through cross-referencing multiple sources, ensuring the reliability of the collected data for ongoing research 
-
-}
-      \resumeItemListEnd
-%-------------------------------------------
 \end{document}
